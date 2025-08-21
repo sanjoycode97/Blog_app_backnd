@@ -6,7 +6,7 @@ from database.models import DbPost
 from routers.schemas import PostBase, PostDisplay
 from services.cloudinary_service import upload_image
 
-router = APIRouter(prefix="/post", tags=["post"])
+router = APIRouter(prefix="/posts", tags=["post"])
 
 # Create post (JSON body with optional image_url)
 @router.post("", response_model=PostDisplay)
